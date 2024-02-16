@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #S",
+    " PT",
+    "P  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:ink_sac"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "T": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "result": {
+    "item": "minecraft:name_tag",
+    "count": 1
+  }
+}

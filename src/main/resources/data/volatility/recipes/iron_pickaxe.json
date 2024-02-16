@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#i#",
+    "L#L",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:iron_plate"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_pickaxe",
+    "count": 1
+  }
+}

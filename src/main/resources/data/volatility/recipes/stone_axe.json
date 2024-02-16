@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#F",
+    "/ ",
+    "/ "
+  ],
+  "key": {
+    "#": {
+      "tag": "volatility:string"
+    },
+    "F": {
+      "item": "volatility:sharp_rock"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "volatility:stone_axe",
+    "count": 1
+  }
+}

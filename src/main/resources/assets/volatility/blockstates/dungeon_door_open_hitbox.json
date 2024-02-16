@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "volatility:block/dungeon_door_open_hitbox"}
+  }
+}

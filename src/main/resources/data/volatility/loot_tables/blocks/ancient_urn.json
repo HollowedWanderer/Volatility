@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 2,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "volatility:ancient_urn",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 1,
+              "name": "volatility:ancient_clay_tablet"
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 2,
+              "name": "minecraft:emerald"
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 3,
+              "name": "minecraft:iron_ingot",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 4,
+              "name": "minecraft:raw_gold"
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 5,
+              "name": "minecraft:coal",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 6,
+              "name": "volatility:ancient_clay",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stick"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

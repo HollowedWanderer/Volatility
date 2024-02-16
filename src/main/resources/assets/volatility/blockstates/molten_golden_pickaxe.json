@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "volatility:block/molten_golden_pickaxe",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "volatility:block/molten_golden_pickaxe"
+    },
+    "facing=south": {
+      "model": "volatility:block/molten_golden_pickaxe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/molten_golden_pickaxe",
+      "y": 270
+    }
+  }
+}

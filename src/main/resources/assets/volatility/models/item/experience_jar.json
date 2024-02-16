@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/experience_jar"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": {
+      "item": "volatility:mahogany_planks"
+  },
+
+  "result": {
+    "item": "volatility:mahogany_button",
+    "count": 1
+  }
+}

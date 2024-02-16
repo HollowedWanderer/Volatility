@@ -1,0 +1,7 @@
+
+{
+  "parent": "volatility:display/dungeon_door.item",
+  "textures": {
+    "particle": "volatility:item/dungeon_door_item"
+  }
+}

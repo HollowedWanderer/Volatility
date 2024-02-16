@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/legendary_key"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

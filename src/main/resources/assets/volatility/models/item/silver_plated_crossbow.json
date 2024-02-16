@@ -1,0 +1,53 @@
+{
+    "loader": "forge:separate_transforms",
+    "gui_light": "front",
+    "base": {
+        "parent": "volatility:item/silver_crossbow_hand"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "volatility:item/silver_crossbow_item"
+        },
+        "fixed": {
+            "parent": "volatility:item/silver_crossbow_item"
+        },
+        "ground": {
+            "parent": "volatility:item/silver_crossbow_item"
+        }
+    },
+"overrides": [
+        {
+            "predicate": {
+                "volatility:pulling": 1
+            },
+            "model": "volatility:item/silver_plated_crossbow_pulling_0"
+        },
+        {
+            "predicate": {
+                "volatility:pulling": 1,
+                "volatility:pull": 0.58
+            },
+            "model": "volatility:item/silver_plated_crossbow_pulling_1"
+        },
+        {
+            "predicate": {
+                "volatility:pulling": 1,
+                "volatility:pull": 0.80
+            },
+            "model": "volatility:item/silver_plated_crossbow_pulling_2"
+        },
+        {
+            "predicate": {
+                "volatility:charged": 1
+            },
+            "model": "volatility:item/silver_plated_crossbow_arrow"
+        },
+        {
+            "predicate": {
+                "volatility:charged": 1,
+                "volatility:firework": 1
+            },
+            "model": "volatility:item/silver_plated_crossbow_firework"
+        }
+    ]
+}

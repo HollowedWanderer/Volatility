@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "volatility:block/ancient_clay_slab"
+    },
+    "type=double": {
+      "model": "volatility:block/ancient_clay"
+    },
+    "type=top": {
+      "model": "volatility:block/ancient_clay_slab_top"
+    }
+  }
+}

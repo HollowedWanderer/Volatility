@@ -1,0 +1,18 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/stone_greatsword_blocking_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/stone_greatsword_inventory"
+		},
+		"fixed": {
+			"parent": "volatility:item/stone_greatsword_inventory"
+		},
+		"ground": {
+			"parent": "volatility:item/stone_greatsword_inventory"
+		}
+	}
+}

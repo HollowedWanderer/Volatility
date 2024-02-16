@@ -1,0 +1,41 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "rightDoor",
+					"pivot": [24, 0, 2],
+					"cubes": [
+						{"origin": [21, 43, -4], "size": [3, 6, 8], "uv": [44, 68]},
+						{"origin": [3, 18, -3.5], "size": [6, 6, 2], "pivot": [0, 24, -2], "rotation": [-10, 0, 0], "uv": [58, 68]},
+						{"origin": [5, 24, -3], "size": [2, 2, 6], "uv": [36, 68]},
+						{"origin": [3, 18, 1.5], "size": [6, 6, 2], "pivot": [0, 24, 2], "rotation": [10, 0, 0], "uv": [16, 82]},
+						{"origin": [21, 16, -4], "size": [3, 6, 8], "uv": [66, 68]},
+						{"origin": [0, 0, -2], "size": [24, 64, 4], "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "leftDoor",
+					"pivot": [-24, 0, 2],
+					"cubes": [
+						{"origin": [-24, 0, -2], "size": [24, 64, 4], "uv": [0, 0]},
+						{"origin": [-24, 43, -4], "size": [3, 6, 8], "uv": [0, 68]},
+						{"origin": [-24, 16, -4], "size": [3, 6, 8], "uv": [22, 68]},
+						{"origin": [-9, 18, 1.5], "size": [6, 6, 2], "pivot": [0, 24, 2], "rotation": [10, 0, 0], "uv": [0, 82]},
+						{"origin": [-7, 24, -3], "size": [2, 2, 6], "uv": [14, 68]},
+						{"origin": [-9, 18, -3.5], "size": [6, 6, 2], "pivot": [0, 24, -2], "rotation": [-10, 0, 0], "uv": [80, 68]}
+					]
+				}
+			]
+		}
+	]
+}

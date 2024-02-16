@@ -1,0 +1,18 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/crab_claw_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/crab_claw_item"
+		},
+		"fixed": {
+			"parent": "volatility:item/crab_claw_item"
+		},
+		"ground": {
+			"parent": "volatility:item/crab_claw_item"
+		}
+	}
+}

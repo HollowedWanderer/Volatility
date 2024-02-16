@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/aetherium_ingot"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

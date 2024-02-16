@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "volatility:block/sugar_cane_bundle",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "volatility:block/sugar_cane_bundle"
+    },
+    "axis=z": {
+      "model": "volatility:block/sugar_cane_bundle",
+      "x": 90
+    }
+  }
+}

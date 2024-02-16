@@ -1,0 +1,6 @@
+{
+  "parent": "bettercombat:battlestaff",
+  "attributes": {
+    "attackRange": 2.75
+  }
+}

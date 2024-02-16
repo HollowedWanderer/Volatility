@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "volatility:block/orange_fir_sapling"
+  }
+}

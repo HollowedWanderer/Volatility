@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:polished_andesite"
+    },
+    {
+      "item": "minecraft:snow_block"
+    }
+  ],
+  "result": {
+    "item": "volatility:snow_covered_polished_andesite",
+    "count": 1
+  }
+}

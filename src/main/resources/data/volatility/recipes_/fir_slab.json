@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "volatility:fir_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "PPP"
+  ],
+  "result": {
+    "item": "volatility:fir_slab",
+    "count": 6
+  }
+}

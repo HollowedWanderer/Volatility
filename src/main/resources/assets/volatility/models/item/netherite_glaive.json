@@ -1,0 +1,18 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/netherite_glaive_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/netherite_glaive_inventory"
+		},
+		"fixed": {
+			"parent": "volatility:item/netherite_glaive_inventory"
+		},
+		"ground": {
+			"parent": "volatility:item/netherite_glaive_inventory"
+		}
+	}
+}

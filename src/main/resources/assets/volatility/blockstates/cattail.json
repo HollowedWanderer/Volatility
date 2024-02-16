@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "volatility:block/cattail_bottom"
+    },
+    "half=upper": {
+      "model": "volatility:block/cattail_top"
+    }
+  }
+}

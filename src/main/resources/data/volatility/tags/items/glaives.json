@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "volatility:iron_glaive",
+    "volatility:steel_glaive",
+    "volatility:golden_glaive",
+    "volatility:diamond_glaive",
+    "volatility:platinum_glaive",
+    "volatility:netherite_glaive"
+  ]
+}

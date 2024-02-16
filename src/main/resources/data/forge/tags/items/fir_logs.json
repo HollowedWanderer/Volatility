@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "volatility:fir_log",
+    "volatility:fir_wood",
+    "volatility:stripped_fir_log",
+    "volatility:stripped_fir_wood"
+  ]
+}

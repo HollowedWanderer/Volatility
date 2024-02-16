@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "target": {
+      "Name": "minecraft:deepslate",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "state": {
+      "Name": "volatility:slate"
+    },
+    "radius": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 4,
+        "max_inclusive": 7
+      }
+    }
+  }
+}

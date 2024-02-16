@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "volatility:block/stick_bundle",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "volatility:block/stick_bundle"
+    },
+    "axis=z": {
+      "model": "volatility:block/stick_bundle",
+      "x": 90
+    }
+  }
+}

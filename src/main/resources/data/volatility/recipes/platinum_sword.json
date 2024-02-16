@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    "i# ",
+    "#L "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:platinum_plate"
+    },
+    "i": {
+      "item": "volatility:platinum"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "volatility:platinum_sword",
+    "count": 1
+  }
+}

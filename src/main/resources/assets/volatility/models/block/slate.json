@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "volatility:block/slate",
+    "end": "volatility:block/slate_top"
+  }
+}

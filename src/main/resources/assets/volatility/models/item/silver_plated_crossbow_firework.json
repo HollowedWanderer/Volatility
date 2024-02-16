@@ -1,0 +1,18 @@
+{
+    "loader": "forge:separate_transforms",
+    "gui_light": "front",
+    "base": {
+        "parent": "volatility:item/silver_crossbow_rocket_hand"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "volatility:item/silver_plated_crossbow_firework_item"
+        },
+        "fixed": {
+            "parent": "volatility:item/silver_plated_crossbow_firework_item"
+        },
+        "ground": {
+            "parent": "volatility:item/silver_plated_crossbow_firework_item"
+        }
+    }
+}

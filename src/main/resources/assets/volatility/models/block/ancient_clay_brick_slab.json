@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "volatility:block/ancient_clay_bricks",
+    "side": "volatility:block/ancient_clay_bricks",
+    "top": "volatility:block/ancient_clay_bricks"
+  }
+}

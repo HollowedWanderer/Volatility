@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "volatility:block/molten_diamond_axe",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "volatility:block/molten_diamond_axe"
+    },
+    "facing=south": {
+      "model": "volatility:block/molten_diamond_axe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/molten_diamond_axe",
+      "y": 270
+    }
+  }
+}

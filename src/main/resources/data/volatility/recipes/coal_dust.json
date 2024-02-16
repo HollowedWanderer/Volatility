@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "minecraft:coal"
+  },
+  "result": "volatility:coal_dust",
+  "experience": 0.1,
+  "cookingtime": 50
+}

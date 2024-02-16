@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "volatility:plant_fiber"
+    },
+    {
+      "item": "volatility:plant_fiber"
+    },
+    {
+      "item": "volatility:plant_fiber"
+    }
+  ],
+  "result": {
+    "item": "volatility:twine",
+    "count": 1
+  }
+}

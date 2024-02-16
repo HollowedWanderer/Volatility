@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "volatility:block/sack_bottom",
+    "east": "volatility:block/sack_side",
+    "north": "volatility:block/sack_side",
+    "particle": "volatility:block/sack_side",
+    "south": "volatility:block/sack_side",
+    "up": "volatility:block/feather_sack_top",
+    "west": "volatility:block/sack_side"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "loader": "forge:separate-transforms",
+  "base": {
+    "parent": "volatility:item/test_model_item_hand"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "volatility:item/test_model_item_inventory"
+    },
+    "fixed": {
+      "parent": "volatility:item/test_model_item_inventory"
+    },
+    "ground": {
+      "parent": "volatility:item/test_model_item_inventory"
+    }
+  }
+}

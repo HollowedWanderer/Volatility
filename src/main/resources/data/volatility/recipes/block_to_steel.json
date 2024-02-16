@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "volatility:steel_block"
+    }
+  ],
+  "result": {
+    "item": "volatility:steel_scrap",
+    "count": 9
+  }
+}

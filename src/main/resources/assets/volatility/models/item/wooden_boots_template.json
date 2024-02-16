@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/wooden_boots_template"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

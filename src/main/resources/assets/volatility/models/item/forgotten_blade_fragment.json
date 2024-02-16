@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/forgotten_blade_fragment"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "volatility:block/orange_fir_sapling"
+  },
+  "render_type": "cutout"
+}

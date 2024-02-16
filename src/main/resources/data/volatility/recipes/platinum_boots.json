@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "ILI"
+  ],
+  "key": {
+    "i": {
+      "item": "volatility:platinum"
+    },
+    "I": {
+      "item": "volatility:platinum_plate"
+    },
+    "L": {
+      "item": "minecraft:leather_boots"
+    }
+  },
+  "result": {
+    "item": "volatility:platinum_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "volatility:slate"
+  },
+  "result": "volatility:slate_tiles",
+  "count": 1
+}

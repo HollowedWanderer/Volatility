@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "volatility:iron_greatsword",
+    "volatility:golden_greatsword",
+    "volatility:diamond_greatsword",
+    "volatility:netherite_greatsword",
+    "volatility:steel_greatsword",
+    "volatility:platinum_greatsword",
+    "volatility:illager_knights_greatsword",
+    "volatility:viridis_blade"
+  ]
+}

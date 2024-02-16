@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "swamp",
+    "mangrove_swamp"
+  ],
+  "features": "volatility:swamp_pool",
+  "step": "top_layer_modification"
+}

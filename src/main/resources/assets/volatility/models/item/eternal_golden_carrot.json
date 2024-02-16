@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "volatility:item/eternal_golden_carrot"
+  }
+}

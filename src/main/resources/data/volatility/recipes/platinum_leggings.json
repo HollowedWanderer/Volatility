@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iCi"
+  ],
+  "key": {
+    "i": {
+      "item": "volatility:platinum"
+    },
+    "C": {
+      "item": "minecraft:chainmail_leggings"
+    }
+  },
+  "result": {
+    "item": "volatility:platinum_leggings",
+    "count": 1
+  }
+}

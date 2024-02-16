@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "volatility:block/mining_table_bottom",
+    "east": "volatility:block/mining_table_front",
+    "north": "volatility:block/mining_table_side",
+    "particle": "volatility:block/mining_table_front",
+    "south": "volatility:block/mining_table_side",
+    "up": "volatility:block/mining_table_top",
+    "west": "volatility:block/mining_table_front"
+  }
+}

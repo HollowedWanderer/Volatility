@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "volatility:mahogany_log",
+    "volatility:mahogany_wood",
+    "volatility:stripped_mahogany_log",
+    "volatility:stripped_mahogany_wood"
+  ]
+}

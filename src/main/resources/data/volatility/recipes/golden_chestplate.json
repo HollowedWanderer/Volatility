@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "ICI",
+    "LIL"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:gold_ingot"
+    },
+    "I": {
+      "item": "volatility:gold_plate"
+    },
+    "C": {
+      "item": "minecraft:chainmail_chestplate"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "minecraft:golden_chestplate",
+    "count": 1
+  }
+}

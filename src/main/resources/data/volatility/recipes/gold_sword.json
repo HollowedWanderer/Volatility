@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    "i# ",
+    "#L "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:gold_plate"
+    },
+    "i": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "minecraft:golden_sword",
+    "count": 1
+  }
+}

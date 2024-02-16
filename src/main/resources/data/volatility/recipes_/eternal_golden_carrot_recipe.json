@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "GCG",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:golden_carrot"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "C": {
+      "item": "volatility:infinity_dust"
+    }
+  },
+  "result": {
+    "item": "volatility:eternal_golden_carrot",
+    "count": 1
+  }
+}

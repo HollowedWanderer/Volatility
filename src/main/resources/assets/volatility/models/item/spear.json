@@ -1,0 +1,26 @@
+{
+	"loader": "forge:separate-perspective",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/spear_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/spear_inventory"
+		},
+		"fixed": {
+			"parent": "volatility:item/spear_inventory"
+		},
+		"ground": {
+			"parent": "volatility:item/spear_inventory"
+		}
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"throwing": 1
+			},
+			"model": "volatility:item/spear_throwing"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "volatility:custom/dungeon_door_particle"
+    },
+    "facing=east": {
+      "model": "volatility:custom/dungeon_door_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "volatility:custom/dungeon_door_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:custom/dungeon_door_particle",
+      "y": 270
+    }
+  }
+}

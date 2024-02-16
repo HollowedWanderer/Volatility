@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "volatility:block/ancient_clay",
+    "side": "volatility:block/trimmed_ancient_clay"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 6,
+        "max": 14
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "volatility:silver_helmet",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "volatility:silver_plated_chestpiece",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "volatility:silver_plated_leggings",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "volatility:silver_tipped_boots",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:dark_oak_log"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:string"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:carrot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:wheat"
+        }
+      ]
+    }
+  ]
+}

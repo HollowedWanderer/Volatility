@@ -1,0 +1,24 @@
+{
+  "feature": "volatility:ancient_clay_layer_top_filler",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 256
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 115
+        },
+        "max_inclusive": {
+          "absolute": 117
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

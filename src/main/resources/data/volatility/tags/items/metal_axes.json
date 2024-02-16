@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_axe",
+    "minecraft:golden_axe",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_axe",
+    "volatility:steel_axe",
+    "volatility:platinum_axe"
+  ]
+}

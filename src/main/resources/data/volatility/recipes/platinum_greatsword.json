@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# I",
+    "IE ",
+    "iI#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "I": {
+      "item": "volatility:platinum_plate"
+    },
+    "i": {
+      "item": "volatility:platinum"
+    },
+    "E": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "volatility:platinum_greatsword",
+    "count": 1
+  }
+}

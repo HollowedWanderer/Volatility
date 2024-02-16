@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "volatility:block/alloy_forge",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "volatility:block/alloy_forge"
+    },
+    "facing=south": {
+      "model": "volatility:block/alloy_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/alloy_forge",
+      "y": 270
+    }
+  }
+}

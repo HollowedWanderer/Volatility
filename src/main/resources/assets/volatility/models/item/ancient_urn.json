@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/ancient_urn_item"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

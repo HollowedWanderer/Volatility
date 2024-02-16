@@ -1,0 +1,57 @@
+{
+  "feature": "volatility:oak_bush",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "uniform",
+        "value": {
+          "min_inclusive": 90,
+          "max_inclusive": 110
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 55
+        },
+        "max_inclusive": {
+          "absolute": 180
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "#minecraft:dirt",
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "#volatility:water"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

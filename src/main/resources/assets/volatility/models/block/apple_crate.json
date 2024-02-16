@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "volatility:block/crate_bottom",
+    "east": "volatility:block/apple_crate_side",
+    "north": "volatility:block/apple_crate_side",
+    "particle": "volatility:block/apple_crate_side",
+    "south": "volatility:block/apple_crate_side",
+    "up": "volatility:block/apple_crate_top",
+    "west": "volatility:block/apple_crate_side"
+  }
+}

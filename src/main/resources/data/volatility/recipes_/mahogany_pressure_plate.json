@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " PP",
+    "   "
+  ],
+
+  "key": {
+    "P": {
+      "item": "volatility:mahogany_planks"
+    }
+  },
+
+  "result": {
+    "item": "volatility:mahogany_pressure_plate",
+    "count": 1
+  }
+}

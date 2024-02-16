@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "volatility:block/aquarium_glass"
+    },
+    "facing=east": {
+      "model": "volatility:block/aquarium_glass",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "volatility:block/aquarium_glass",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/aquarium_glass",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "volatility:block/aquarium_glass",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "volatility:block/aquarium_glass",
+      "x": 90
+    }
+  }
+}

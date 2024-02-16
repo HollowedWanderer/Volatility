@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/ancient_clay_tablet"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

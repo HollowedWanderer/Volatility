@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    "Li ",
+    "iL "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:gold_plate"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "i": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "volatility:golden_glaive",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "volatility:block/bamboo_bundle",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "volatility:block/bamboo_bundle"
+    },
+    "axis=z": {
+      "model": "volatility:block/bamboo_bundle",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "volatility:block/molten_silver_plated_leggings",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "volatility:block/molten_silver_plated_leggings"
+    },
+    "facing=south": {
+      "model": "volatility:block/molten_silver_plated_leggings",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/molten_silver_plated_leggings",
+      "y": 270
+    }
+  }
+}

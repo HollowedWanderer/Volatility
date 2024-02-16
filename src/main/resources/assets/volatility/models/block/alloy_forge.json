@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "volatility:block/alloy_forge_front",
+    "side": "volatility:block/alloy_forge_side",
+    "top": "volatility:block/alloy_forge_top",
+    "bottom": "volatility:block/alloy_forge_bottom"
+  }
+}

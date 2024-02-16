@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "render_type": "cutout",
+  "textures": {
+    "cross": "volatility:block/cattail_top"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna_plateau",
+    "savanna",
+    "windswept_savanna",
+    "dark_forest",
+    "jungle",
+    "bamboo_jungle",
+    "sparse_jungle"
+  ],
+  "features": "volatility:coarse_dirt_patch",
+  "step": "vegetal_decoration"
+}

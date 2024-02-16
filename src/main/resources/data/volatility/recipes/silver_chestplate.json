@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "ILI"
+  ],
+  "key": {
+    "i": {
+      "item": "volatility:silver_scrap"
+    },
+    "I": {
+      "item": "volatility:silver_plate"
+    },
+    "L": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "item": "volatility:silver_plated_chestpiece",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##i",
+    "L/B",
+    "/L "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:silver_plate"
+    },
+    "i": {
+      "item": "volatility:silver_scrap"
+    },
+    "L": {
+      "item": "volatility:tattered_linen"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "minecraft:bone_block"
+    }
+  },
+  "result": {
+    "item": "volatility:bone_scythe",
+    "count": 1
+  }
+}

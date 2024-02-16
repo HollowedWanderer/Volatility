@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "L L",
+    "iCi",
+    "L L"
+  ],
+  "key": {
+    "i": {
+      "item": "volatility:steel_scrap"
+    },
+    "C": {
+      "item": "minecraft:chainmail_leggings"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "volatility:steel_leggings",
+    "count": 1
+  }
+}

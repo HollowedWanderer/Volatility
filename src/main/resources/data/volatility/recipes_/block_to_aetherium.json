@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "volatility:aetherium_block"
+    }
+  ],
+  "result": {
+    "item": "volatility:aetherium_ingot",
+    "count": 9
+  }
+}

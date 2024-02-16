@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "S S",
+    "PPP"
+  ],
+  "result": {
+    "item": "volatility:crate"
+  }
+}

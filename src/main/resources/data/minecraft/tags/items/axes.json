@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "volatility:sharp_rock",
+    "volatility:stone_axe",
+    "volatility:steel_axe",
+    "volatility:platinum_axe"
+  ]
+}

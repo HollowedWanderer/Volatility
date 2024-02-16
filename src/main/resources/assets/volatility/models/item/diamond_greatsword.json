@@ -1,0 +1,26 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/diamond_greatsword_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/diamond_greatsword_inventory"
+		},
+		"fixed": {
+			"parent": "volatility:item/diamond_greatsword_inventory"
+		},
+		"ground": {
+			"parent": "volatility:item/diamond_greatsword_inventory"
+		}
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"volatility:blocking": 1
+			},
+			"model": "volatility:item/diamond_greatsword_blocking"
+		}
+	]
+}

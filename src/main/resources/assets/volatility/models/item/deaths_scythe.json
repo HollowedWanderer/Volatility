@@ -1,0 +1,18 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/deaths_scythe_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/deaths_scythe_inventory"
+		},
+		"fixed": {
+			"parent": "volatility:item/deaths_scythe_inventory"
+		},
+		"ground": {
+			"parent": "volatility:item/deaths_scythe_inventory"
+		}
+	}
+}

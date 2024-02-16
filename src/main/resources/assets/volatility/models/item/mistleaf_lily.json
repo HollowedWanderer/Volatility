@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/mistleaf_lily"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/staff_of_thundering_strike_item"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

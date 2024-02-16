@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "target": {
+      "Name": "minecraft:deepslate",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "state": {
+      "Name": "volatility:deepslate_platinum_ore"
+    },
+    "radius": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 0,
+        "max_inclusive": 1
+      }
+    }
+  }
+}

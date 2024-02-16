@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#R#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:ancient_clay"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "volatility:trimmed_ancient_clay",
+    "count": 8
+  }
+}

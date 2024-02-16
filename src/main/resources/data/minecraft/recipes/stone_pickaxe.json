@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "S/S",
+    " / "
+  ],
+  "key": {
+    "C": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:stone_pickaxe",
+    "count": 1
+  },
+  "show_notification": true
+}

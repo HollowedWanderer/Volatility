@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iCi"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:chainmail_leggings"
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_leggings",
+    "count": 1
+  }
+}

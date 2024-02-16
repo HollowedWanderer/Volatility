@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "volatility:block/cactus_bundle_side",
+    "end": "volatility:block/cactus_bundle_top"
+  }
+}

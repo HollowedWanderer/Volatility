@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_sword",
+    "minecraft:stone_sword",
+    "minecraft:wooden_axe",
+    "minecraft:stone_axe",
+    "volatility:wooden_greatsword",
+    "volatility:stone_greatsword",
+    "volatility:stone_axe",
+    "volatility:wooden_glaive",
+    "volatility:stone_glaive"
+  ]
+}

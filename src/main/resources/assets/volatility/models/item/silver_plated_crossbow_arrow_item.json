@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow",
+    "textures": {
+        "layer0": "volatility:item/silver_plated_crossbow_arrow"
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/ancient_greatsword_mold"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "volatility:block/hollowed_oak_log"
+    },
+    "facing=east": {
+      "model": "volatility:block/hollowed_oak_log",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "volatility:block/hollowed_oak_log",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/hollowed_oak_log",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "volatility:block/hollowed_oak_log",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "volatility:block/hollowed_oak_log",
+      "x": 90
+    }
+  }
+}

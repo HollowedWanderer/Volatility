@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "volatility:mahogany_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "PPP"
+  ],
+  "result": {
+    "item": "volatility:mahogany_slab",
+    "count": 6
+  }
+}

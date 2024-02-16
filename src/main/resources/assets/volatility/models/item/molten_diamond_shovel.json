@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "volatility:item/molten_shovel_base"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

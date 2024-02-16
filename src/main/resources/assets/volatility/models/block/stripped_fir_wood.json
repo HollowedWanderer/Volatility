@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "volatility:block/stripped_fir_log",
+    "side": "volatility:block/stripped_fir_log"
+  }
+}

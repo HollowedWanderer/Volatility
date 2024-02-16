@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "00 ",
+    "00 ",
+    "   "
+  ],
+  "key": {
+    "0": {
+      "item": "volatility:slate"
+    }
+  },
+  "result": {
+    "item": "volatility:slate_tiles",
+    "count": 4
+  }
+}

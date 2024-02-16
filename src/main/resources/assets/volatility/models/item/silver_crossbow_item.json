@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/silver_plated_crossbow_standby"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

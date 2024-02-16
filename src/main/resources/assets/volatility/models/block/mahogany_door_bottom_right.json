@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "volatility:block/mahogany_door_bottom",
+    "top": "volatility:block/mahogany_door_top"
+  },
+  "render_type": "cutout"
+}

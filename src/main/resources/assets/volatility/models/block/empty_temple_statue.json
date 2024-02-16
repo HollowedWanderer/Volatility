@@ -1,0 +1,148 @@
+{
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "volatility:block/temple_statue",
+		"particle": "volatility:item/empty_temple_statue"
+	},
+	"elements": [
+		{
+			"name": "rightLeg",
+			"from": [8, 1, 6],
+			"to": [12, 12, 10],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [10, 12, 8]},
+			"faces": {
+				"north": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"east": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"south": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"west": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"up": {"uv": [12, 2, 11, 1], "texture": "#1"},
+				"down": {"uv": [12, 1, 11, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leftLeg",
+			"from": [4, 1, 5],
+			"to": [8, 12, 9],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 12, 8]},
+			"faces": {
+				"north": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"east": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"south": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"west": {"uv": [8, 9, 9, 11.75], "texture": "#1"},
+				"up": {"uv": [12, 2, 11, 1], "texture": "#1"},
+				"down": {"uv": [12, 1, 11, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leftArm",
+			"from": [0, 20, -2],
+			"to": [4, 24, 10],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [4, 22, 8]},
+			"faces": {
+				"north": {"uv": [3, 11, 4, 12], "texture": "#1"},
+				"east": {"uv": [8, 1, 11, 2], "texture": "#1"},
+				"south": {"uv": [3, 11, 4, 12], "texture": "#1"},
+				"west": {"uv": [8, 1, 11, 2], "texture": "#1"},
+				"up": {"uv": [9, 5, 8, 2], "texture": "#1"},
+				"down": {"uv": [9, 2, 8, 5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "rightArm",
+			"from": [12, 20, -2],
+			"to": [16, 24, 10],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [12, 22, 8]},
+			"faces": {
+				"north": {"uv": [3, 11, 4, 12], "texture": "#1"},
+				"east": {"uv": [8, 1, 11, 2], "texture": "#1"},
+				"south": {"uv": [3, 11, 4, 12], "texture": "#1"},
+				"west": {"uv": [8, 1, 11, 2], "texture": "#1"},
+				"up": {"uv": [9, 5, 8, 2], "texture": "#1"},
+				"down": {"uv": [9, 2, 8, 5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "body",
+			"from": [3.999, 12, 6],
+			"to": [11.999, 24, 10],
+			"faces": {
+				"north": {"uv": [4, 0, 6, 3], "texture": "#1"},
+				"east": {"uv": [3, 8, 4, 11], "texture": "#1"},
+				"south": {"uv": [4, 0, 6, 3], "texture": "#1"},
+				"west": {"uv": [3, 8, 4, 11], "texture": "#1"},
+				"up": {"uv": [12, 4, 10, 3], "texture": "#1"},
+				"down": {"uv": [12, 3, 10, 4], "texture": "#1"}
+			}
+		},
+		{
+			"name": "base",
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [11, 6, 15, 6.25], "texture": "#1"},
+				"east": {"uv": [11, 6.25, 15, 6.5], "texture": "#1"},
+				"south": {"uv": [11, 6.5, 15, 6.75], "texture": "#1"},
+				"west": {"uv": [11, 6.75, 15, 7], "texture": "#1"},
+				"up": {"uv": [4, 4, 0, 0], "texture": "#1"},
+				"down": {"uv": [4, 0, 0, 4], "texture": "#1"}
+			}
+		},
+		{
+			"name": "head",
+			"from": [4, 24, 4],
+			"to": [12, 32, 12],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 24, 8]},
+			"faces": {
+				"north": {"uv": [6, 0, 8, 2], "texture": "#1"},
+				"east": {"uv": [6, 2, 8, 4], "texture": "#1"},
+				"south": {"uv": [6, 2, 8, 4], "texture": "#1"},
+				"west": {"uv": [6, 2, 8, 4], "texture": "#1"},
+				"up": {"uv": [8, 4, 6, 2], "texture": "#1"},
+				"down": {"uv": [8, 2, 6, 4], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -30, 0],
+			"translation": [1, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -30, 0],
+			"translation": [0, 0, -0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-10, 10, 0],
+			"translation": [1, 0, 1],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-10, 10, 0],
+			"translation": [0, 0, 1],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"ground": {
+			"rotation": [56, -1, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [90, 45.5, -90],
+			"translation": [-0.75, 0.5, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"fixed": {
+			"rotation": [-90, 45, 90],
+			"translation": [-0.5, -1.5, -2.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "statue",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6]
+		}
+	]
+}

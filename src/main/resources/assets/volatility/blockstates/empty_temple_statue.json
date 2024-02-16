@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "volatility:block/empty_temple_statue"
+    },
+    "facing=south": {
+      "model": "volatility:block/empty_temple_statue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/empty_temple_statue",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "volatility:block/empty_temple_statue",
+      "y": 90
+    }
+  }
+}

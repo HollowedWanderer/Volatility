@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "volatility:block/molten_iron_greatsword",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "volatility:block/molten_iron_greatsword"
+    },
+    "facing=south": {
+      "model": "volatility:block/molten_iron_greatsword",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "volatility:block/molten_iron_greatsword",
+      "y": 270
+    }
+  }
+}

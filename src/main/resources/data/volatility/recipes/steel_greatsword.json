@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# I",
+    "IE ",
+    "iI#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "I": {
+      "item": "volatility:steel_plate"
+    },
+    "i": {
+      "item": "volatility:steel_scrap"
+    },
+    "E": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "volatility:steel_greatsword",
+    "count": 1
+  }
+}

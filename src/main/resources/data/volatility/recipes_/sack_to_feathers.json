@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "volatility:feather_sack"
+    }
+  ],
+  "result": {
+    "item": "minecraft:feather",
+    "count": 9
+  }
+}

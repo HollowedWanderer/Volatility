@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "volatility:block/string_spool",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "volatility:block/string_spool"
+    },
+    "axis=z": {
+      "model": "volatility:block/string_spool",
+      "x": 90
+    }
+  }
+}

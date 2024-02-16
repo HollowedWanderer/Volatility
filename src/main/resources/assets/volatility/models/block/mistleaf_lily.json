@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "volatility:block/mistleaf_lily"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,57 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 7
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:blade_pottery_sherd"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:burn_pottery_sherd"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:danger_pottery_sherd"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:skull_pottery_sherd"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:cobweb"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:bone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:ink_sac"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:brick"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:brush"
+        }
+      ]
+    }
+  ]
+}

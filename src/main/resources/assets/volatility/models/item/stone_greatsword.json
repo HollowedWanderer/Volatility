@@ -1,0 +1,26 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/stone_greatsword_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/stone_greatsword_inventory"
+		},
+		"fixed": {
+			"parent": "volatility:item/stone_greatsword_inventory"
+		},
+		"ground": {
+			"parent": "volatility:item/stone_greatsword_inventory"
+		}
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"volatility:blocking": 1
+			},
+			"model": "volatility:item/stone_greatsword_blocking"
+		}
+	]
+}

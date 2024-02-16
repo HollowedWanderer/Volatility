@@ -1,0 +1,124 @@
+{
+  "iceologer_ambient": {
+    "subtitle": "subtitles.iceologer_ambient",
+    "sounds": [
+      {
+        "name": "volatility:iceologer_ambient3",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_ambient2",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_ambient1",
+        "stream": false
+      }
+    ]
+  },
+  "iceologer_hurt": {
+    "subtitle": "subtitles.iceologer_hurt",
+    "sounds": [
+      {
+        "name": "volatility:iceologer_hurt3",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_hurt2",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_hurt1",
+        "stream": false
+      }
+    ]
+  },
+  "iceologer_death": {
+    "subtitle": "subtitles.iceologer_death",
+    "sounds": [
+      {
+        "name": "volatility:iceologer_death3",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_death2",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_death1",
+        "stream": false
+      }
+    ]
+  },
+  "iceologer_attack": {
+    "subtitle": "subtitles.iceologer_attack",
+    "sounds": [
+      {
+        "name": "volatility:iceologer_attack3",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_attack2",
+        "stream": false
+      },
+      {
+        "name": "volatility:iceologer_attack1",
+        "stream": false
+      }
+    ]
+  },
+  "ice_chunk_smash": {
+    "subtitle": "subtitles.ice_chunk_smash",
+    "sounds": [
+      {
+        "name": "volatility:ice_chunk_smash1",
+        "stream": false
+      }
+    ]
+  },
+  "sword_hit": {
+    "subtitle": "subtitles.sword_hit",
+    "sounds": [
+      {
+        "name": "volatility:sword_hit",
+        "stream": false
+      }
+    ]
+  },
+  "greatsword_crit": {
+    "subtitle": "subtitles.greatsword_crit",
+    "sounds": [
+      {
+        "name": "volatility:greatsword_crit",
+        "stream": false
+      }
+    ]
+  },
+  "hammer_hit": {
+    "subtitle": "subtitles.hammer_hit",
+    "sounds": [
+      {
+        "name": "volatility:hammer_hit",
+        "stream": false
+      }
+    ]
+  },
+  "sword_bonk": {
+    "subtitle": "subtitles.sword_bonk",
+    "sounds": [
+      {
+        "name": "volatility:sword_bonk",
+        "stream": false
+      }
+    ]
+  },
+  "axe_hit": {
+    "subtitle": "subtitles.axe_hit",
+    "sounds": [
+      {
+        "name": "volatility:axe_hit",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #S",
+    " /R",
+    "/L "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:boss_antler"
+    },
+    "S": {
+      "tag": "volatility:string"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "volatility:elk_antler"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "volatility:antler_pickaxe",
+    "count": 1
+  }
+}

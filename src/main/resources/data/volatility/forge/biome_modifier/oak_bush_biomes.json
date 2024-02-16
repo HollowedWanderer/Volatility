@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "flower_forest",
+    "forest"
+  ],
+  "features": "volatility:oak_bush",
+  "step": "lakes"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "000",
+    "000",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cactus"
+    }
+  },
+  "result": {
+    "item": "volatility:cactus_bundle",
+    "count": 1
+  }
+}

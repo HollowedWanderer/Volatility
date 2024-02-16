@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "volatility:dungeon_door_hitbox",
+    "volatility:dungeon_door_open_hitbox"
+  ]
+}

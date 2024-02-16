@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+
+        maven { url = 'https://maven.minecraftforge.net/' }
+        maven { url = 'https://maven.parchmentmc.org' }
+        // maven { url = "https://mvn.stopmodreposts.org" }
+    }
+}
+
+rootProject.name = "Hollowed's Swords & Sorcery"
+
+// include('Common', 'Forge', 'Fabric')

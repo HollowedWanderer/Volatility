@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "volatility:block/mahogany_slab"
+    },
+    "type=double": {
+      "model": "volatility:block/mahogany_planks"
+    },
+    "type=top": {
+      "model": "volatility:block/mahogany_slab_top"
+    }
+  }
+}

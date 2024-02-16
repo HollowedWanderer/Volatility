@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gDg",
+    "gig",
+    "LiL"
+  ],
+  "key": {
+    "g": {
+      "item": "volatility:silver_plate"
+    },
+    "D": {
+      "item": "volatility:platinum"
+    },
+    "i": {
+      "item": "volatility:iron_plate"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "volatility:smithing_hammer",
+    "count": 1
+  }
+}

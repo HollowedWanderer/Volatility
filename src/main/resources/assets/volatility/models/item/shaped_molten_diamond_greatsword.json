@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "volatility:item/shaped_molten_greatsword_item"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}

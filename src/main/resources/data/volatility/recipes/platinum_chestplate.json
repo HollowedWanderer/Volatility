@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "ICI",
+    "LIL"
+  ],
+  "key": {
+    "i": {
+      "item": "volatility:platinum"
+    },
+    "I": {
+      "item": "volatility:platinum_plate"
+    },
+    "C": {
+      "item": "minecraft:chainmail_chestplate"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "volatility:platinum_chestplate",
+    "count": 1
+  }
+}

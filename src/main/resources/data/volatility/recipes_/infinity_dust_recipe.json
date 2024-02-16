@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "GCG",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "volatility:ender_dust"
+    },
+    "C": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "volatility:infinity_dust",
+    "count": 1
+  }
+}

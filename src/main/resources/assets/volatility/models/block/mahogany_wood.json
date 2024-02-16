@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "volatility:block/mahogany_log",
+    "side": "volatility:block/mahogany_log"
+  }
+}

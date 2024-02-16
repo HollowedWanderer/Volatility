@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "LiL",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:platinum_plate"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "i": {
+      "item": "volatility:platinum"
+    }
+  },
+  "result": {
+    "item": "volatility:platinum_shovel",
+    "count": 1
+  }
+}

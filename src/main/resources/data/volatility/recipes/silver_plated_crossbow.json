@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iTI",
+    "TSH",
+    "IHS"
+  ],
+  "key": {
+    "i": {
+      "item": "volatility:silver_scrap"
+    },
+    "T": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "I": {
+      "item": "volatility:silver_plate"
+    },
+    "S": {
+      "item": "minecraft:stripped_dark_oak_log"
+    },
+    "H": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "volatility:silver_plated_crossbow",
+    "count": 1
+  }
+}

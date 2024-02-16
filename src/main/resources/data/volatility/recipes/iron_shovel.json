@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "LiL",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "volatility:iron_plate"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_shovel",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "volatility:silver_block"
+    }
+  ],
+  "result": {
+    "item": "volatility:silver_scrap",
+    "count": 9
+  }
+}

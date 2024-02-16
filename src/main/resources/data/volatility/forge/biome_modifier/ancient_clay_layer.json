@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna",
+    "savanna_plateau",
+    "windswept_savanna"
+  ],
+  "features": "volatility:ancient_clay_layer",
+  "step": "surface_structures"
+}

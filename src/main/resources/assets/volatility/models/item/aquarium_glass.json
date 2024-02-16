@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "volatility:item/aquarium_glass"
+	},
+	"display": {
+		"gui_light": "front"
+	}
+}
