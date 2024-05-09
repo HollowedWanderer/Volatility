@@ -33,11 +33,4 @@ public abstract class ItemStackMixin {
     public boolean isDamaged() {
         return false;
     }
-
-    /**
-     * @author Hollowed
-     */
-    public boolean hurt() {
-        return false;
-    }
 }
