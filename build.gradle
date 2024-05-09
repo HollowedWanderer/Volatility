@@ -13,7 +13,7 @@ plugins {
 
     id 'maven-publish'
     id 'eclipse'
-    id 'org.spongepowered.mixin' version '0.7.+' apply true
+    //id 'org.spongepowered.mixin' version '0.7.+' apply true
 }
 
 version = '0.2.0-1.20.1'
@@ -195,11 +195,6 @@ dependencies {
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-}
-
-mixin {
-    add sourceSets.main, 'mixins.volatility.refmap.json'
-    config 'mixins.volatility.json'
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
