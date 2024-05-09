@@ -11,13 +11,17 @@ import net.hollowed.volatility.common.client.particle.ModParticleTypes;
 import net.hollowed.volatility.common.effect.ModEffects;
 import net.hollowed.volatility.common.enchantment.ModEnchantments;
 import net.hollowed.volatility.common.entity.ModEntityTypes;
+import net.hollowed.volatility.common.entity.client.CursedRemainsRenderer;
 import net.hollowed.volatility.common.event.ModClientSetupEvents;
 import net.hollowed.volatility.common.event.ModCommonSetupEvents;
+import net.hollowed.volatility.common.event.ModEvents;
 import net.hollowed.volatility.common.item.ModCreativeModeTab;
 import net.hollowed.volatility.common.item.ModItems;
 import net.hollowed.volatility.common.sound.ModSounds;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.TickEvent;
@@ -71,15 +75,7 @@ public class Volatility {
         }
     }
 
-
-
-
-
-
     private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
-
-
-
 
     public Volatility() {
 
@@ -166,6 +162,7 @@ public class Volatility {
             event.accept(ModBlocks.MOLTEN_STEEL_SCRAP);
             event.accept(ModBlocks.MOLTEN_GOLD_SCRAP);
             event.accept(ModBlocks.MOLTEN_PLATINUM_SCRAP);
+            event.accept(ModItems.ECTOPLASM);
             event.accept(ModItems.BONE_SCYTHE);
             event.accept(ModItems.CRYONIC_SCYTHE);
             event.accept(ModItems.ILLAGER_KNIGHTS_GREATSWORD);
@@ -211,6 +208,7 @@ public class Volatility {
             event.accept(ModItems.GOLDEN_GREATSWORD);
             event.accept(ModItems.DIAMOND_GREATSWORD);
             event.accept(ModItems.NETHERITE_GREATSWORD);
+            event.accept(ModItems.TWISTING_BLADE);
             event.accept(ModItems.VANGUARD_SHIELD);
             event.accept(ModItems.HORNED_DIAMOND_HELMET);
             event.accept(ModItems.CRAB_CLAW);
@@ -220,7 +218,6 @@ public class Volatility {
             event.accept(ModItems.STAFF_OF_THUNDERING);
             event.accept(ModItems.ICE_WAND);
             event.accept(ModItems.VIRIDIS_BLADE);
-            event.accept(ModItems.EXPERIENCE_JAR);
         }
         if(event.getTab() == ModCreativeModeTab.BLOCKS_TAB.get()) {
             event.accept(ModBlocks.PLATINUM_ORE);
@@ -262,10 +259,11 @@ public class Volatility {
             event.accept(ModBlocks.SUSPICIOUS_DIRT);
             event.accept(ItemRegistry.PEDESTAL_ITEM);
             event.accept(ModBlocks.AQUARIUM_GLASS);
+            event.accept(ModBlocks.ARMOR_PILE);
         }
-        //if(event.getTab() == ModCreativeModeTab.ENTITIES_TAB.get()) {
-        //    event.accept(ModItems.ICEOLOGER_SPAWN_EGG);
-        //}
+        if(event.getTab() == ModCreativeModeTab.ENTITIES_TAB.get()) {
+            event.accept(ModItems.CURSED_REMAINS_SPAWN_EGG);
+        }
     }
 
   //  private void enqueueIMC(final InterModEnqueueEvent event) {
@@ -283,11 +281,8 @@ public class Volatility {
      //                   .priority(220).icon(InventoryMenu.EMPTY_ARMOR_SLOT_BOOTS).build());
    // }
 
-   public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder,
-                                             Function<FriendlyByteBuf, T> decoder,
-                                             BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
+    public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
         PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
         messageID++;
     }
-
 }

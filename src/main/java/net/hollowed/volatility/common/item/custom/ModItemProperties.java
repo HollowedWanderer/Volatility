@@ -22,7 +22,8 @@ public class ModItemProperties {
                     (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F,
                     ModItems.STEEL_GREATSWORD.get(), ModItems.PLATINUM_GREATSWORD.get(), ModItems.WOODEN_GREATSWORD.get(),
                     ModItems.STONE_GREATSWORD.get(), ModItems.IRON_GREATSWORD.get(), ModItems.GOLDEN_GREATSWORD.get(),
-                    ModItems.DIAMOND_GREATSWORD.get(), ModItems.NETHERITE_GREATSWORD.get(), ModItems.VANGUARD_SHIELD.get(), ModItems.ILLAGER_KNIGHTS_GREATSWORD.get(), ModItems.VIRIDIS_BLADE.get());
+                    ModItems.DIAMOND_GREATSWORD.get(), ModItems.NETHERITE_GREATSWORD.get(), ModItems.VANGUARD_SHIELD.get(),
+                    ModItems.ILLAGER_KNIGHTS_GREATSWORD.get(), ModItems.VIRIDIS_BLADE.get(), ModItems.TWISTING_BLADE.get());
             addStaffPropertyOverrides(new ResourceLocation(Volatility.MOD_ID, "charge"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                 if (p_174637_ == null) {
                     return 0.0F;

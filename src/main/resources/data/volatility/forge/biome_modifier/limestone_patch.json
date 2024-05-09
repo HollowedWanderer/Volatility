@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "desert",
+  "features": "volatility:limestone_patch",
+  "step": "raw_generation"
+}

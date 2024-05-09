@@ -25,7 +25,6 @@ public class ModCreativeModeTab {
             CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STAFF_OF_THUNDERING.get())).title(Component.literal("Magic")).build());
     public static RegistryObject<CreativeModeTab> BLOCKS_TAB = CREATIVE_MODE_TABS.register("blocks_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.SLATE.get())).title(Component.literal("Blocks")).build());
-
-    //public static RegistryObject<CreativeModeTab> ENTITIES_TAB = CREATIVE_MODE_TABS.register("entities_tab", () ->
-      //      CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ICEOLOGER_SPAWN_EGG.get())).title(Component.literal("volatility - Creatures/Monsters")).build());
+    public static RegistryObject<CreativeModeTab> ENTITIES_TAB = CREATIVE_MODE_TABS.register("entities_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CURSED_REMAINS_SPAWN_EGG.get())).title(Component.literal("Creatures/Monsters")).build());
 }

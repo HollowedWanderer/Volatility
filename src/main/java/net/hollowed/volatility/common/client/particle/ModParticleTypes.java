@@ -23,6 +23,9 @@ public class ModParticleTypes {
             () -> new SimpleParticleType(false));
     public static final RegistryObject<SimpleParticleType> LEAVES = REGISTRY.register("leaves",
             () -> new SimpleParticleType(false));
+
+    public static final RegistryObject<SimpleParticleType> SAND_ROPE = REGISTRY.register("sand_rope",
+            () -> new SimpleParticleType(false));
     public static final RegistryObject<SimpleParticleType> SLASH = REGISTRY.register("slash",
             () -> new SimpleParticleType(false));
     public static final RegistryObject<SimpleParticleType> FOG = REGISTRY.register("fog",

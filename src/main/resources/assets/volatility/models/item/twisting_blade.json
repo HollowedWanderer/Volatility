@@ -1,0 +1,26 @@
+{
+	"loader": "forge:separate_transforms",
+	"gui_light": "front",
+	"base": {
+		"parent": "volatility:item/twisting_blade_hand"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "volatility:item/twisting_blade_inventory"
+		},
+		"fixed": {
+			"parent": "volatility:item/twisting_blade_inventory"
+		},
+		"ground": {
+			"parent": "volatility:item/twisting_blade_inventory"
+		}
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"volatility:blocking": 1
+			},
+			"model": "volatility:item/twisting_blade_blocking"
+		}
+	]
+}

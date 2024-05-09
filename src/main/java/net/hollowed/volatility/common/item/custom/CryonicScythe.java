@@ -2,7 +2,7 @@ package net.hollowed.volatility.common.item.custom;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.hollowed.volatility.common.event.FreezeHit;
+import net.hollowed.volatility.common.event.ScytheFreezeHit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.Entity;
@@ -81,7 +81,7 @@ public class CryonicScythe extends SwordItem implements Vanishable {
     @Override
     public boolean hurtEnemy(@NotNull ItemStack itemstack, @NotNull LivingEntity entity, @NotNull LivingEntity sourceentity) {
         boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-        FreezeHit.execute(entity);
+        ScytheFreezeHit.execute(entity);
         return retval;
     }
 

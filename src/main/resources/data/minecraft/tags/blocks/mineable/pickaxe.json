@@ -36,6 +36,7 @@
     "volatility:molten_gold_scrap",
     "volatility:molten_steel_scrap",
     "volatility:molten_silver_scrap",
-    "volatility:molten_platinum_scrap"
+    "volatility:molten_platinum_scrap",
+    "volatility:armor_pile"
   ]
 }

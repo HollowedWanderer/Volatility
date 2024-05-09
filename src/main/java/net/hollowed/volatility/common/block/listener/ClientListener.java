@@ -2,6 +2,7 @@ package net.hollowed.volatility.common.block.listener;
 
 import net.hollowed.volatility.Volatility;
 import net.hollowed.volatility.common.block.entity.ModBlockEntities;
+import net.hollowed.volatility.common.block.renderer.ArmorPileTileRenderer;
 import net.hollowed.volatility.common.block.renderer.DungeonDoorOpenTileRenderer;
 import net.hollowed.volatility.common.block.renderer.DungeonDoorTileRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -18,5 +19,6 @@ public class ClientListener {
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(ModBlockEntities.DUNGEON_DOOR.get(), context -> new DungeonDoorTileRenderer());
 		event.registerBlockEntityRenderer(ModBlockEntities.DUNGEON_DOOR_OPEN.get(), context -> new DungeonDoorOpenTileRenderer());
+		event.registerBlockEntityRenderer(ModBlockEntities.ARMOR_PILE.get(), context -> new ArmorPileTileRenderer());
 	}
 }

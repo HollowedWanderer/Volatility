@@ -1,0 +1,7 @@
+
+{
+  "parent": "volatility:display/armor_pile.item",
+  "textures": {
+    "particle": "minecraft:item/iron_ingot"
+  }
+}

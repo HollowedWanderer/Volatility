@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "desert",
+  "features": "volatility:desert_sand_patch",
+  "step": "underground_ores"
+}

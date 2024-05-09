@@ -15,6 +15,7 @@ public class ModParticles {
         event.registerSpriteSet(ModParticleTypes.FRICTION_SPARKS.get(), FrictionSparks::provider);
         event.registerSpriteSet(ModParticleTypes.DEATH_SWEEP.get(), DeathSweep::provider);
         event.registerSpriteSet(ModParticleTypes.ICE_PORTAL.get(), IcePortal::provider);
+        event.registerSpriteSet(ModParticleTypes.SAND_ROPE.get(), SandRope::provider);
         event.registerSpriteSet(ModParticleTypes.LEAVES.get(), Leaves::provider);
         event.registerSpriteSet(ModParticleTypes.SLASH.get(), Slash::provider);
         event.registerSpriteSet(ModParticleTypes.FOG.get(), Fog::provider);

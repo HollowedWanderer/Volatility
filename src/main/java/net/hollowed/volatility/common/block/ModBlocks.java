@@ -29,6 +29,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             SteelBlock::new);
 
+    public static final RegistryObject<Block> SANDSTONE = registerBlock("sandstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_FOSSIL = registerBlock("ancient_fossil",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BASALT).sound(SoundType.BASALT)));
+    public static final RegistryObject<Block> LIMESTONE = registerBlock("limestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BASALT).sound(SoundType.BASALT)));
+
+    public static final RegistryObject<Block> ARMOR_PILE = registerBlock("armor_pile",
+            ArmorPileBlock::new);
+
     public static final RegistryObject<Block> AQUARIUM_GLASS = registerBlock("aquarium_glass",
             AquariumGlass::new);
     //  public static final RegistryObject<Block> MINING_TABLE = registerBlock("mining_table",

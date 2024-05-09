@@ -12,6 +12,12 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Volatility.MOD_ID);
 
+    public static final RegistryObject<SoundEvent> NECROMANCER_IDLE = registerSoundEvent("necromancer_idle");
+    public static final RegistryObject<SoundEvent> NECROMANCER_STEP = registerSoundEvent("necromancer_step");
+    public static final RegistryObject<SoundEvent> NECROMANCER_HURT = registerSoundEvent("necromancer_hurt");
+    public static final RegistryObject<SoundEvent> NECROMANCER_DEATH = registerSoundEvent("necromancer_death");
+    public static final RegistryObject<SoundEvent> NECROMANCER_LAUGH = registerSoundEvent("necromancer_laugh");
+    public static final RegistryObject<SoundEvent> NECROMANCER_BOLT = registerSoundEvent("necromancer_bolt");
     public static final RegistryObject<SoundEvent> ICEOLOGER_AMBIENT = registerSoundEvent("iceologer_ambient");
     public static final RegistryObject<SoundEvent> ICEOLOGER_HURT = registerSoundEvent("iceologer_hurt");
     public static final RegistryObject<SoundEvent> ICEOLOGER_DEATH = registerSoundEvent("iceologer_death");
@@ -20,6 +26,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> SWORD_HIT = registerSoundEvent("sword_hit");
     public static final RegistryObject<SoundEvent> GREATSWORD_CRIT = registerSoundEvent("greatsword_crit");
     public static final RegistryObject<SoundEvent> HAMMER_HIT = registerSoundEvent("hammer_hit");
+    public static final RegistryObject<SoundEvent> HOOK_LAND = registerSoundEvent("hook_land");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         ResourceLocation id = new ResourceLocation(Volatility.MOD_ID, name);

@@ -2,8 +2,10 @@ package net.hollowed.volatility.common.item;
 
 import net.hollowed.volatility.Volatility;
 //import net.hollowed.volatility.common.entity.ModEntityTypes;
+import net.hollowed.volatility.common.entity.ModEntityTypes;
 import net.hollowed.volatility.common.item.custom.*;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,16 +16,12 @@ public class ModItems {
 
     /** Entity Spawn Eggs **/
 
-    //public static final RegistryObject<Item> ICEOLOGER_SPAWN_EGG = ITEMS.register("iceologer_spawn_egg",
-      //      () -> new ForgeSpawnEggItem(ModEntityTypes.ICEOLOGER, 0x005bb0, 0x9cd9ff,
-        //            new Item.Properties()));
+    public static final RegistryObject<Item> CURSED_REMAINS_SPAWN_EGG = ITEMS.register("cursed_remains_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.CURSED_REMAINS, -5785153, -12670032,
+                    new Item.Properties()));
 
     public static final RegistryObject<Item> STAFF_OF_THUNDERING = ITEMS.register("staff_of_thundering",
             StaffOfThundering::new);
-
-
-    public static final RegistryObject<Item> EXPERIENCE_JAR = ITEMS.register("experience_jar",
-            () -> new ExperienceJarItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> ICE_WAND = ITEMS.register("ice_wand",
             IceWand::new);
     public static final RegistryObject<Item> ETERNAL_GOLDEN_CARROT = ITEMS.register("eternal_golden_carrot",
@@ -35,6 +33,17 @@ public class ModItems {
     public static final RegistryObject<Item> COAL_DUST = ITEMS.register("coal_dust",
             () -> new Item(new Item.Properties().stacksTo(64)
             ));
+
+    public static final RegistryObject<Item> ECTOPLASM = ITEMS.register("ectoplasm",
+            () -> new Item(new Item.Properties().stacksTo(64)
+            ));
+
+    public static final RegistryObject<Item> TWISTING_BLADE = ITEMS.register("twisting_blade",
+            () -> new TwistingBlade(ModTiers.Steel, 5, -2.8f,
+                    new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> GRAPPLING_HOOK = ITEMS.register("remnant_hook",
+            () -> new HookItem(new Item.Properties().rarity(ModRarity.LEGENDARY)));
 
 
     public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate",
@@ -70,6 +79,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64)
             ));
 
+    public static final RegistryObject<Item> REMNANT_BLADE_SHARD = ITEMS.register("remnant_blade_shard",
+            () -> new Item(new Item.Properties().stacksTo(64)
+            ));
+
     public static final RegistryObject<Item> ELK_ANTLER = ITEMS.register("elk_antler",
             () -> new Item(new Item.Properties().stacksTo(64)
             ));
@@ -82,11 +95,12 @@ public class ModItems {
             () -> new AxeItem(ModTiers.ModWood, -1, -3.1f,
                     new Item.Properties()));
 
-    public static final RegistryObject<Item> KINGSPIERCER = ITEMS.register("kingspiercer",
-            () -> new Kingspiercer(new Item.Properties().durability(350)));
-
     public static final RegistryObject<Item> STONE_AXE = ITEMS.register("stone_axe",
             () -> new AxeItem(ModTiers.ModStone, 2, -3.0f,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> REMNANT_SCRAP_AXE = ITEMS.register("remnant_scrap_axe",
+            () -> new RemnantAxe(ModTiers.ModDiamond, 5, -3.0f,
                     new Item.Properties()));
 
     public static final RegistryObject<Item> SHARP_STICK = ITEMS.register("sharp_stick",

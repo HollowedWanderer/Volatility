@@ -1,4 +1,102 @@
 {
+  "necromancer_idle": {
+    "subtitle": "subtitles.necromancer_idles",
+    "sounds": [
+      {
+        "name": "volatility:necromancer_idle1",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_idle2",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_idle3",
+        "stream": false
+      }
+    ]
+  },
+  "necromancer_step": {
+    "subtitle": "subtitles.necromancer_steps",
+    "sounds": [
+      {
+        "name": "volatility:necromancer_step1",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_step2",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_step3",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_step4",
+        "stream": false
+      }
+    ]
+  },
+  "necromancer_laugh": {
+    "subtitle": "subtitles.necromancer_laughs",
+    "sounds": [
+      {
+        "name": "volatility:necromancer_laugh1",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_laugh2",
+        "stream": false
+      }
+    ]
+  },
+  "necromancer_hurt": {
+    "subtitle": "subtitles.necromancer_hurts",
+    "sounds": [
+      {
+        "name": "volatility:necromancer_hurt1",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_hurt2",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_hurt3",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_hurt4",
+        "stream": false
+      }
+    ]
+  },
+  "necromancer_death": {
+    "subtitle": "subtitles.necromancer_dies",
+    "sounds": [
+      {
+        "name": "volatility:necromancer_death1",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_death2",
+        "stream": false
+      }
+    ]
+  },
+  "necromancer_bolt": {
+    "subtitle": "subtitles.necromancer_bolt",
+    "sounds": [
+      {
+        "name": "volatility:necromancer_bolt1",
+        "stream": false
+      },
+      {
+        "name": "volatility:necromancer_bolt2",
+        "stream": false
+      }
+    ]
+  },
   "iceologer_ambient": {
     "subtitle": "subtitles.iceologer_ambient",
     "sounds": [
@@ -117,6 +215,15 @@
     "sounds": [
       {
         "name": "volatility:axe_hit",
+        "stream": false
+      }
+    ]
+  },
+  "hook_land": {
+    "subtitle": "subtitles.hook_land",
+    "sounds": [
+      {
+        "name": "volatility:hook_land",
         "stream": false
       }
     ]

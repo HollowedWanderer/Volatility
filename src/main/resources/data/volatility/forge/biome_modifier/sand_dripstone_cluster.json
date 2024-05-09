@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "desert",
+  "features": "volatility:sand_dripstone_cluster",
+  "step": "raw_generation"
+}

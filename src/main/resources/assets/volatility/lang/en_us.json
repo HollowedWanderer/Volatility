@@ -1,5 +1,6 @@
 {
   "item.volatility.iceologer_spawn_egg": "Iceologer Spawn Egg",
+  "item.volatility.cursed_remains_spawn_egg": "Cursed Remains Spawn Egg",
 
   "subtitles.iceologer_ambient": "Iceologer Growls",
   "subtitles.iceologer_hurt": "Iceologer Hurts",
@@ -14,17 +15,21 @@
   "subtitles.axe_hit": "Axe Cleaves",
 
   "effect.volatility.feather_fall": "Feather Fall",
-  "effect.volatility.frozen": "Frozen",
+  "effect.volatility.scythe_frozen": "Frozen",
   "effect.volatility.silver_shield": "Silver Shield",
+  "effect.volatility.pharaohs_curse": "Pharaoh's Curse",
+  "effect.volatility.hooked": "Hooked",
   "enchantment.volatility.curse_of_shattering": "Curse of Shattering",
-  "enchantment.volatility.dash": "Velocity Readjuster",
-  "enchantment.volatility.double_jump": "Aerial Step",
   "enchantment.volatility.gilded_resilience": "Gilded Resilience",
 
   "item.minecraft.iron_ingot": "Iron Scrap",
   "item.minecraft.gold_ingot": "Gold Scrap",
   "item.minecraft.copper_ingot": "Copper Scrap",
 
+  "block.volatility.sandstone": "Sandstone",
+  "block.volatility.limestone": "Limestone",
+  "block.volatility.ancient_fossil": "Ancient Fossil",
+  "block.volatility.armor_pile": "Armor Pile",
   "block.volatility.aquarium_glass": "Aquarium Glass",
   "block.volatility.pedestal": "Pedestal",
   "block.minecraft.sandstone": "Hardened Sand",
@@ -311,6 +316,7 @@
   "item.volatility.silver_plate": "Silver Plate",
   "item.volatility.gold_plate": "Gold Plate",
   "item.volatility.platinum_plate": "Platinum Plate",
+  "item.volatility.ectoplasm": "Ectoplasm",
 
   "item.volatility.wooden_helmet_template": "Wooden Helmet Template",
   "item.volatility.wooden_chestplate_template": "Wooden Chestplate Template",
@@ -346,6 +352,7 @@
   "item.volatility.antler_pickaxe": "Antler Pickaxe",
   "block.volatility.suspicious_dirt": "Suspicious Dirt",
 
+  "item.volatility.twisting_blade": "Twisting Blade",
   "item.volatility.ice_wand": "Ice Wand",
   "item.volatility.vanguard_shield": "Vanguard Shield",
   "item.volatility.staff_of_thundering": "Stormcaller's Staff",
@@ -399,8 +406,11 @@
   "item.volatility.diamond_greatsword": "Diamond Greatsword",
   "item.volatility.netherite_greatsword": "Netherite Greatsword",
 
-
+  "item.volatility.remnant_hook": "Remnant Hook",
   "item.volatility.deaths_scythe": "Death's Scythe",
+
+  "item.volatility.remnant_blade_shard": "Remnant Blade Shard",
+  "item.volatility.remnant_scrap_axe": "Remnant Scrap Axe",
 
   "item.volatility.test_item": "Test Item",
   "item.volatility.test_model_item": "Test Model Item",
@@ -413,8 +423,8 @@
   "key.category.volatility.volatility": "Hollowed's Swords & Sorcery",
 
   "entity.minecraft.villager.volatility.spelunker": "Spelunker",
-  "entity.volatility.deepslate_golem": "Deepslate Golem"
+  "entity.volatility.deepslate_golem": "Deepslate Golem",
+  "entity.volatility.cursed_remains": "Cursed Remains",
 
-
-
+  "death.attack.curse": "%1$s was stabbed by their own sword"
 }

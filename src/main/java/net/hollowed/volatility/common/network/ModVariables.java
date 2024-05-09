@@ -26,6 +26,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
+
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -66,10 +67,12 @@ public class ModVariables {
             PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
             PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
             if (!event.isWasDeath()) {
-                clone.digCooldown = original.digCooldown;
-                clone.jumpCooldown = original.jumpCooldown;
-                clone.dashCooldown = original.dashCooldown;
-                clone.fallDamage = original.fallDamage;
+                clone.hookX = original.hookX;
+                clone.hookY = original.hookY;
+                clone.hookZ = original.hookZ;
+                clone.hooked = original.hooked;
+                clone.killHook = original.killHook;
+                clone.curse = original.curse;
             }
         }
     }
@@ -82,7 +85,7 @@ public class ModVariables {
         @SubscribeEvent
         public static void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
             if (event.getObject() instanceof Player && !(event.getObject() instanceof FakePlayer))
-                event.addCapability(new ResourceLocation("e", "player_variables"), new PlayerVariablesProvider());
+                event.addCapability(new ResourceLocation("volatilitytest", "player_variables"), new PlayerVariablesProvider());
         }
 
         private final PlayerVariables playerVariables = new PlayerVariables();
@@ -105,10 +108,12 @@ public class ModVariables {
     }
 
     public static class PlayerVariables {
-        public boolean digCooldown = false;
-        public boolean jumpCooldown = false;
-        public boolean dashCooldown = false;
-        public boolean fallDamage = false;
+        public double hookX = 0;
+        public double hookY = 0;
+        public double hookZ = 0;
+        public boolean hooked = false;
+        public boolean killHook = false;
+        public boolean curse = false;
 
         public void syncPlayerVariables(Entity entity) {
             if (entity instanceof ServerPlayer serverPlayer)
@@ -117,24 +122,28 @@ public class ModVariables {
 
         public Tag writeNBT() {
             CompoundTag nbt = new CompoundTag();
-            nbt.putBoolean("digCooldown", digCooldown);
-            nbt.putBoolean("jumpCooldown", jumpCooldown);
-            nbt.putBoolean("dashCooldown", dashCooldown);
-            nbt.putBoolean("fallDamage", fallDamage);
+            nbt.putDouble("hookX", hookX);
+            nbt.putDouble("hookY", hookY);
+            nbt.putDouble("hookZ", hookZ);
+            nbt.putBoolean("hooked", hooked);
+            nbt.putBoolean("killHook", killHook);
+            nbt.putBoolean("curse", curse);
             return nbt;
         }
 
         public void readNBT(Tag Tag) {
             CompoundTag nbt = (CompoundTag) Tag;
-            digCooldown = nbt.getBoolean("digCooldown");
-            jumpCooldown = nbt.getBoolean("jumpCooldown");
-            dashCooldown = nbt.getBoolean("dashCooldown");
-            fallDamage = nbt.getBoolean("fallDamage");
+            hookX = nbt.getDouble("hookX");
+            hookY = nbt.getDouble("hookY");
+            hookZ = nbt.getDouble("hookZ");
+            hooked = nbt.getBoolean("hooked");
+            killHook = nbt.getBoolean("killHook");
+            curse = nbt.getBoolean("curse");
         }
     }
 
     public static class PlayerVariablesSyncMessage {
-        public PlayerVariables data;
+        private final PlayerVariables data;
 
         public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
             this.data = new PlayerVariables();
@@ -154,10 +163,12 @@ public class ModVariables {
             context.enqueueWork(() -> {
                 if (!context.getDirection().getReceptionSide().isServer()) {
                     PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-                    variables.digCooldown = message.data.digCooldown;
-                    variables.jumpCooldown = message.data.jumpCooldown;
-                    variables.dashCooldown = message.data.dashCooldown;
-                    variables.fallDamage = message.data.fallDamage;
+                    variables.hookX = message.data.hookX;
+                    variables.hookY = message.data.hookY;
+                    variables.hookZ = message.data.hookZ;
+                    variables.hooked = message.data.hooked;
+                    variables.killHook = message.data.killHook;
+                    variables.curse = message.data.curse;
                 }
             });
             context.setPacketHandled(true);

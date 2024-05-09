@@ -188,7 +188,7 @@ dependencies {
 
     //runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.1-5.1.0.5")
     //compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.1-5.1.0.5:api")
-    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.2.2')
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.3.1')
 
     // implementation fg.deobf('maven.modrinth:better-combat:1.5.3+1.19-forge')
     // implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:0.4.1+1.19.3")
@@ -200,7 +200,7 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "volatility",
-                "Specification-Vendor"    : "Hollowed Wanderer",
+                "Specification-Vendor"    : "HollowedWanderer",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
