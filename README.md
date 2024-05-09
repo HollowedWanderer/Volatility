@@ -1,6 +1,6 @@
-# Hollowed's Swords & Sorcery
+# Volatility
 
-Hollowed's Swords & Sorcery is Minecraft mod that's all about creating more immersion into Minecraft and adding more features related to fantasy and magic. The Mod attempts to do this while also trying to stick with the main vanilla design principles.
+Volatility is Minecraft mod that's all about creating more immersion into Minecraft and adding more features related to fantasy and magic. The Mod attempts to do this while also trying to stick with the main vanilla design principles.
 
 
 
