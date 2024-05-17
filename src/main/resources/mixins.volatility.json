@@ -3,9 +3,10 @@
   "minVersion": "0.8",
   "compatibilityLevel": "JAVA_17",
   "package": "net.hollowed.volatility.common.mixin",
-  "refmap": "mixins.enhancedcampfire.refmap.json",
+  "refmap": "mixins.volatility.refmap.json",
   "mixins": [
-    "ItemStackMixin"
+    "ItemStackMixin",
+    "PlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 0

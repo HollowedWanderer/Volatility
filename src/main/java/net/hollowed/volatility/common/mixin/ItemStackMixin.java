@@ -12,25 +12,7 @@ public abstract class ItemStackMixin {
      * @reason Remove durability
      */
     @Overwrite
-    public int getMaxDamage() {
-        return 0;
-    }
-
-    /**
-     * @author Hollowed
-     * @reason Remove durability
-     */
-    @Overwrite
     public boolean isDamageableItem() {
-        return false;
-    }
-
-    /**
-     * @author Hollowed
-     * @reason Remove durability
-     */
-    @Overwrite
-    public boolean isDamaged() {
         return false;
     }
 }
