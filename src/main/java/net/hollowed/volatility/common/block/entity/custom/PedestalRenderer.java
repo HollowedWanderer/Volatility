@@ -58,5 +58,4 @@ public class PedestalRenderer implements BlockEntityRenderer<PedestalTile> {
         itemRenderer.renderStatic(itemStack, ItemDisplayContext.FIXED, LevelRenderer.getLightColor(Objects.requireNonNull(pedestalTile.getLevel()), pedestalTile.getBlockPos()), packedOverlay, poseStack, bufferSource, pedestalTile.getLevel(), renderId);
         poseStack.popPose();
     }
-
 }

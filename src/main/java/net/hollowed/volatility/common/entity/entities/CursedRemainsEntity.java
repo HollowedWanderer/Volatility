@@ -126,7 +126,7 @@ public class CursedRemainsEntity extends Monster implements GeoEntity {
         this.goalSelector.addGoal(1, new CursedRemainsSwingGoal(this, 1.17, false) {
             @Override
             protected double getAttackReachSqr(LivingEntity entity) {
-                return 12;
+                return 10;
             }
 
             @Override
@@ -143,7 +143,7 @@ public class CursedRemainsEntity extends Monster implements GeoEntity {
         this.goalSelector.addGoal(1, new CursedRemainsDoubleSwingGoal(this, 1.17, false) {
             @Override
             protected double getAttackReachSqr(LivingEntity entity) {
-                return 12;
+                return 10;
             }
 
             @Override
@@ -280,12 +280,12 @@ public class CursedRemainsEntity extends Monster implements GeoEntity {
     public static AttributeSupplier.Builder createAttributes() {
         AttributeSupplier.Builder builder = Mob.createMobAttributes();
         builder = builder.add(Attributes.MOVEMENT_SPEED, 0.19);
-        builder = builder.add(Attributes.MAX_HEALTH, 240);
-        builder = builder.add(Attributes.ARMOR, 0);
-        builder = builder.add(Attributes.ATTACK_DAMAGE, 9);
+        builder = builder.add(Attributes.MAX_HEALTH, 200);
+        builder = builder.add(Attributes.ARMOR, 10);
+        builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
         builder = builder.add(Attributes.FOLLOW_RANGE, 40);
-        builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.8);
-        builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1.5);
+        builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.7);
+        builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2.0);
         return builder;
     }
 

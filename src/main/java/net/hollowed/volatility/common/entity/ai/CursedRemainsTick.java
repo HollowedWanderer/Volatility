@@ -15,8 +15,8 @@ public class CursedRemainsTick {
             entity.getPersistentData().putDouble("cooldown1", (entity.getPersistentData().getDouble("cooldown1") - 1));
         }
         if (entity.getPersistentData().getDouble("cooldown1") <= 0) {
-            entity.getPersistentData().putDouble("attack", (Mth.nextInt(RandomSource.create(), 1, 5)));
-            entity.getPersistentData().putDouble("cooldown1", 16);
+            entity.getPersistentData().putDouble("attack", (Mth.nextInt(RandomSource.create(), 0, 4)));
+            entity.getPersistentData().putDouble("cooldown1", 4);
         }
         if (entity.getPersistentData().getDouble("cooldown2") <= 0) {
             entity.getPersistentData().putDouble("blockCheck", (Mth.nextInt(RandomSource.create(), 1, 3)));

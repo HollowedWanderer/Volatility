@@ -2,6 +2,9 @@ package net.hollowed.volatility.common.entity.ai;
 
 import net.hollowed.volatility.Volatility;
 import net.hollowed.volatility.common.entity.entities.CursedRemainsEntity;
+import net.minecraft.commands.CommandSource;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -38,18 +41,17 @@ public class CursedRemainsHurt {
     private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
         if (entity == null)
             return;
-        if (Mth.nextInt(RandomSource.create(), 1, 3) == 1 &&
-                entity instanceof CursedRemainsEntity &&
-                entity.getPersistentData().getDouble("attacking") == 0 &&
-                entity.getPersistentData().getDouble("blocking") == 0) {
+        if (Mth.nextInt(RandomSource.create(), 1, 5) == 1 &&
+                entity instanceof CursedRemainsEntity) {
             if (event != null && event.isCancelable()) {
                 event.setCanceled(true);
             }
-            ((CursedRemainsEntity) entity).setAnimation("block");
+            //((CursedRemainsEntity) entity).setAnimation("block");
+            if (!entity.level().isClientSide() && entity.getServer() != null) {
+                entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, entity.position(), entity.getRotationVector(), entity.level() instanceof ServerLevel ? (ServerLevel) entity.level() : null, 4,
+                        entity.getName().getString(), entity.getDisplayName(), Objects.requireNonNull(entity.level().getServer()), entity), "/particle volatility:friction_sparks ~ ~1 ~ 0 0 0 0.2 15");
+            }
             entity.getPersistentData().putDouble("blocking", 1);
-            Volatility.queueServerWork(25, ()-> {
-                entity.getPersistentData().putDouble("blocking", 0);
-            });
             if (world instanceof Level _level) {
                 if (!_level.isClientSide()) {
                     _level.playSound(null, BlockPos.containing(x, y, z), Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.land"))), SoundSource.HOSTILE, 1, (float) 1.8);

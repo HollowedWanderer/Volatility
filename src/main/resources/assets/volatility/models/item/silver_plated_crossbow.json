@@ -25,14 +25,14 @@
         {
             "predicate": {
                 "volatility:pulling": 1,
-                "volatility:pull": 0.58
+                "volatility:pull": 0.7
             },
             "model": "volatility:item/silver_plated_crossbow_pulling_1"
         },
         {
             "predicate": {
                 "volatility:pulling": 1,
-                "volatility:pull": 0.80
+                "volatility:pull": 1
             },
             "model": "volatility:item/silver_plated_crossbow_pulling_2"
         },

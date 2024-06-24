@@ -62,10 +62,6 @@ public class BlockingSword extends SwordItem  {
         return InteractionResultHolder.consume(itemstack);
     }
 
-    public boolean isValidRepairItem(@NotNull ItemStack p_43091_, ItemStack p_43092_) {
-        return p_43092_.is(ItemTags.PLANKS) || super.isValidRepairItem(p_43091_, p_43092_);
-    }
-
     public static DyeColor getColor(ItemStack p_43103_) {
         CompoundTag compoundtag = BlockItem.getBlockEntityData(p_43103_);
         return compoundtag != null ? DyeColor.byId(compoundtag.getInt("Base")) : DyeColor.WHITE;

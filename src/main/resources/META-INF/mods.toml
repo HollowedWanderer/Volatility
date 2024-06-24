@@ -22,7 +22,7 @@ modId="volatility" #mandatory
 
 loader="forge:separate-perspective"
 
-version="0.2.0-1.20.1" #mandatory
+version="0.2.0-1.20.6" #mandatory
  # A display name for the mod
 displayName="Volatility" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/

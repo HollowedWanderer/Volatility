@@ -18,9 +18,8 @@ public class CursedRemainsComboExtra {
         if (entity == null)
             return;
         if (entity instanceof CursedRemainsEntity) {
+            entity.getPersistentData().putDouble("cooldown", 65);
             ((CursedRemainsEntity) entity).setAnimation("double_swing");
-            entity.getPersistentData().putDouble("cooldown", 70);
-            entity.getPersistentData().putDouble("attacking", 1);
             Volatility.queueServerWork(7, () -> {
                 if (world instanceof Level _level) {
                     if (!_level.isClientSide()) {
@@ -48,10 +47,6 @@ public class CursedRemainsComboExtra {
                     }
                 }
             });
-            Volatility.queueServerWork(60, ()-> {
-                entity.getPersistentData().putDouble("attacking", 0);
-            });
-
         }
     }
 }

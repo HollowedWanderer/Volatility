@@ -25,9 +25,9 @@ public class CursedRemainsDoubleSwingGoal extends Goal {
     private double pathedTargetZ;
     private int ticksUntilNextPathRecalculation;
     private int ticksUntilNextAttack;
-    private final int attackInterval = 80;
+    private final int attackInterval = 65;
     private long lastCanUseCheck;
-    private static final long COOLDOWN_BETWEEN_CAN_USE_CHECKS = 80L;
+    private static final long COOLDOWN_BETWEEN_CAN_USE_CHECKS = 65L;
     private int failedPathFindingPenalty = 0;
     private boolean canPenalize = false;
 
@@ -40,7 +40,7 @@ public class CursedRemainsDoubleSwingGoal extends Goal {
 
     public boolean canUse() {
         long i = this.mob.level().getGameTime();
-        if (i - this.lastCanUseCheck < 80L) {
+        if (i - this.lastCanUseCheck < 0L) {
             return false;
         } else {
             this.lastCanUseCheck = i;
@@ -154,12 +154,12 @@ public class CursedRemainsDoubleSwingGoal extends Goal {
     protected void checkAndPerformAttack(LivingEntity target, double distanceToTarget) {
         double attackRange = this.getAttackReachSqr(target);
         if (distanceToTarget <= attackRange && this.ticksUntilNextAttack <= 0) {
-            this.mob.getPersistentData().putDouble("cooldown", 70);
             this.resetAttackCooldown();
             this.mob.swing(InteractionHand.MAIN_HAND);
             if(!this.mob.isDeadOrDying()) {
                 Level world = this.mob.level();
                 CursedRemainsComboExtra.execute(world, this.mob, this.mob.getX(), this.mob.getY(), this.mob.getZ());
+                ((CursedRemainsEntity) this.mob).setAnimation("double_swing");
             }
 
             this.ticksUntilNextAttack = this.getAttackInterval();
@@ -182,7 +182,7 @@ public class CursedRemainsDoubleSwingGoal extends Goal {
     }
 
     protected void resetAttackCooldown() {
-        this.ticksUntilNextAttack = this.adjustedTickDelay(80);
+        this.ticksUntilNextAttack = this.adjustedTickDelay(65);
     }
 
     protected boolean isTimeToAttack() {
@@ -194,7 +194,7 @@ public class CursedRemainsDoubleSwingGoal extends Goal {
     }
 
     protected int getAttackInterval() {
-        return this.adjustedTickDelay(80);
+        return this.adjustedTickDelay(65);
     }
 
     protected double getAttackReachSqr(LivingEntity p_25556_) {

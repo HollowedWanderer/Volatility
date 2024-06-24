@@ -42,7 +42,7 @@ public class FrictionSparks extends TextureSheetParticle {
         this.yd = vy * 1;
         this.zd = vz * 1;
         this.angularVelocity = 0f;
-        this.angularAcceleration = 0.1f;
+        this.angularAcceleration = 0.01f;
         this.pickSprite(spriteSet);
     }
 

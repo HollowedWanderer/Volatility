@@ -3,10 +3,14 @@ package net.hollowed.volatility.common.entity.ai;
 import java.util.EnumSet;
 
 import net.hollowed.volatility.Volatility;
+import net.hollowed.volatility.common.entity.entities.CursedRemainsEntity;
 import net.hollowed.volatility.common.entity.extra.CursedRemainsSwingExtra;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.player.Player;
@@ -22,9 +26,9 @@ public class CursedRemainsSwingGoal extends Goal {
     private double pathedTargetZ;
     private int ticksUntilNextPathRecalculation;
     private int ticksUntilNextAttack;
-    private final int attackInterval = 55;
+    private final int attackInterval = 45;
     private long lastCanUseCheck;
-    private static final long COOLDOWN_BETWEEN_CAN_USE_CHECKS = 55L;
+    private static final long COOLDOWN_BETWEEN_CAN_USE_CHECKS = 45L;
     private int failedPathFindingPenalty = 0;
     private boolean canPenalize = false;
 
@@ -37,7 +41,7 @@ public class CursedRemainsSwingGoal extends Goal {
 
     public boolean canUse() {
         long i = this.mob.level().getGameTime();
-        if (i - this.lastCanUseCheck < 55L) {
+        if (i - this.lastCanUseCheck < 0L) {
             return false;
         } else {
             this.lastCanUseCheck = i;
@@ -148,8 +152,16 @@ public class CursedRemainsSwingGoal extends Goal {
             this.resetAttackCooldown();
             this.mob.swing(InteractionHand.MAIN_HAND);
             if(!this.mob.isDeadOrDying()) {
-                this.mob.getPersistentData().putDouble("cooldown", 40);
                 CursedRemainsSwingExtra.execute(this.mob.level(), this.mob, this.mob.getX(), this.mob.getY(), this.mob.getZ());
+                if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+                    if (this.mob instanceof CursedRemainsEntity) {
+                        ((CursedRemainsEntity) this.mob).setAnimation("swing1");
+                    }
+                } else {
+                    if (this.mob instanceof CursedRemainsEntity) {
+                        ((CursedRemainsEntity) this.mob).setAnimation("swing2");
+                    }
+                }
             }
 
 
@@ -166,7 +178,7 @@ public class CursedRemainsSwingGoal extends Goal {
     }
 
     protected void resetAttackCooldown() {
-        this.ticksUntilNextAttack = this.adjustedTickDelay(55);
+        this.ticksUntilNextAttack = this.adjustedTickDelay(45);
     }
 
     protected boolean isTimeToAttack() {
@@ -178,7 +190,7 @@ public class CursedRemainsSwingGoal extends Goal {
     }
 
     protected int getAttackInterval() {
-        return this.adjustedTickDelay(55);
+        return this.adjustedTickDelay(45);
     }
 
     protected double getAttackReachSqr(LivingEntity p_25556_) {

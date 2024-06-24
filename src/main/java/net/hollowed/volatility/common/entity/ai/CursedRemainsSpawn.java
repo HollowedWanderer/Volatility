@@ -6,7 +6,7 @@ public class CursedRemainsSpawn {
     public static void execute(Entity entity) {
         if (entity == null)
             return;
-        entity.getPersistentData().putDouble("cooldown", 0);
+        entity.getPersistentData().putDouble("cooldown", 60);
     }
 }
 

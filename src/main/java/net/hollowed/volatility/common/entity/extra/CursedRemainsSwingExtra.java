@@ -19,27 +19,16 @@ public class CursedRemainsSwingExtra {
     public static boolean execute(LevelAccessor world, Entity entity, double x, double y, double z) {
         if (entity == null)
             return false;
+        entity.getPersistentData().putDouble("cooldown", 45);
         if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-                if (entity instanceof Mob _entity)
-                    _entity.getNavigation().stop();
-                if (entity instanceof CursedRemainsEntity) {
-                    ((CursedRemainsEntity) entity).setAnimation("empty");
-                }
-                if (entity instanceof CursedRemainsEntity) {
-                    ((CursedRemainsEntity) entity).setAnimation("swing1");
-                }
-            } else {
-                if (entity instanceof Mob _entity)
-                    _entity.getNavigation().stop();
-                if (entity instanceof CursedRemainsEntity) {
-                    ((CursedRemainsEntity) entity).setAnimation("empty");
-                }
-                if (entity instanceof CursedRemainsEntity) {
-                    ((CursedRemainsEntity) entity).setAnimation("swing2");
-                }
+            if (entity instanceof CursedRemainsEntity) {
+                ((CursedRemainsEntity) entity).setAnimation("swing1");
             }
-        entity.getPersistentData().putDouble("cooldown", 40);
-        entity.getPersistentData().putDouble("attacking", 1);
+        } else {
+            if (entity instanceof CursedRemainsEntity) {
+                ((CursedRemainsEntity) entity).setAnimation("swing2");
+            }
+        }
         Volatility.queueServerWork(7, () -> {
             if (world instanceof Level _level) {
                 if (!_level.isClientSide()) {
@@ -57,9 +46,6 @@ public class CursedRemainsSwingExtra {
                     _level.playLocalSound(x, y, z, Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("volatility:sword_hit"))), SoundSource.HOSTILE, 1, (float) 0.6, false);
                 }
             }
-        });
-        Volatility.queueServerWork(30, ()-> {
-            entity.getPersistentData().putDouble("attacking", 0);
         });
         return true;
     }

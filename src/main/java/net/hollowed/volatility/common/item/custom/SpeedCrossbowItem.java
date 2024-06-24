@@ -78,7 +78,7 @@ public class SpeedCrossbowItem extends CrossbowItem {
     }
 
     private static float getShootingPower(ItemStack p_40946_) {
-        return containsChargedProjectile(p_40946_, Items.FIREWORK_ROCKET) ? 2.8F : 5.75F;
+        return containsChargedProjectile(p_40946_, Items.FIREWORK_ROCKET) ? 2.8F : 4.75F;
     }
 
     public void releaseUsing(ItemStack p_40875_, Level p_40876_, LivingEntity p_40877_, int p_40878_) {
