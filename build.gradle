@@ -1,8 +1,13 @@
 buildscript {
-
+    repositories {
+        maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        mavenCentral()
+    }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
 
@@ -154,12 +159,26 @@ mixin {
 
 repositories {
     maven {
+        name 'Curios maven'
+        url = "https://maven.theillusivec4.top/"
+        content {
+            includeGroupByRegex "top\\.theillusivec4.*"
+        }
+    }
+    maven {
         name = 'GeckoLib'
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
         content {
             includeGroup("software.bernie.geckolib")
         }
     }
+
+    mavenCentral()
+    maven {
+        name 'Curios maven'
+        url = "https://maven.theillusivec4.top/"
+    }
+    maven { url = 'https://maven.blamejared.com/' }
 
     exclusiveContent {
         forRepository {
@@ -199,6 +218,7 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.19'
     implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.20")
 
+    implementation fg.deobf("curse.maven:lodestone-616457:5460471")
     //implementation fg.deobf("maven.modrinth:runes-and-spirits:1.0.0-1.20.1")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings

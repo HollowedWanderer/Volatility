@@ -8,20 +8,18 @@ import net.hollowed.volatility.common.block.entity.ModBlockEntities;
 //import net.hollowed.volatility.common.client.particle.ModParticleTypes;
 //import net.hollowed.volatility.common.client.particle.ModParticles;
 import net.hollowed.volatility.common.client.particle.ModParticleTypes;
+import net.hollowed.volatility.common.client.shader.TintPostProcessor;
 import net.hollowed.volatility.common.effect.ModEffects;
 import net.hollowed.volatility.common.enchantment.ModEnchantments;
 import net.hollowed.volatility.common.entity.ModEntityTypes;
-import net.hollowed.volatility.common.entity.client.CursedRemainsRenderer;
+import net.hollowed.volatility.common.event.ClientModEvents;
 import net.hollowed.volatility.common.event.ModClientSetupEvents;
 import net.hollowed.volatility.common.event.ModCommonSetupEvents;
-import net.hollowed.volatility.common.event.ModEvents;
 import net.hollowed.volatility.common.item.ModCreativeModeTab;
 import net.hollowed.volatility.common.item.ModItems;
 import net.hollowed.volatility.common.sound.ModSounds;
-import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.TickEvent;
@@ -36,6 +34,7 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
+import team.lodestar.lodestone.systems.postprocess.PostProcessHandler;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -49,6 +48,7 @@ import java.util.function.Supplier;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Volatility.MOD_ID)
 public class Volatility {
+
     public static final String MOD_ID = "volatility";
     public static final Logger LOGGER = LogUtils.getLogger();
 

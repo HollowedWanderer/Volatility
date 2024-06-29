@@ -16,11 +16,16 @@ import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
+import team.lodestar.lodestone.handlers.ScreenshakeHandler;
+import team.lodestar.lodestone.systems.easing.Easing;
+import team.lodestar.lodestone.systems.screenshake.PositionedScreenshakeInstance;
+import team.lodestar.lodestone.systems.screenshake.ScreenshakeInstance;
 
 public class DeathItemRightclick {
     public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
         {
             if (entity instanceof Player _player) {
+                _player.getCooldowns().addCooldown(itemstack.getItem(), 5);
                 if (!_player.isCreative()) {
                     ItemStack _ist = itemstack;
                     if (_ist.hurt(1, RandomSource.create(), null)) {
@@ -65,6 +70,16 @@ public class DeathItemRightclick {
                             Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
                     "summon minecraft:marker ~ ~ ~ {Tags:[\"death\"]}");
         DeathEvent.execute(world, entity);
+        //ScreenshakeInstance instance = new ScreenshakeInstance(5);
+        //instance.setIntensity(0.25F);
+        //instance.setEasing(Easing.LINEAR);
+        //ScreenshakeHandler.addScreenshake(instance);
+
+        PositionedScreenshakeInstance instance1 = new PositionedScreenshakeInstance(5, entity.getEyePosition(), 2, 4);
+        instance1.setIntensity(0.35F);
+        for (int i = 0; i < 2; i++) {
+            ScreenshakeHandler.addScreenshake(instance1);
+        }
     }
 }
 
