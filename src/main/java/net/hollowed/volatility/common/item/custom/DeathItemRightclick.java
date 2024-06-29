@@ -1,5 +1,7 @@
 package net.hollowed.volatility.common.item.custom;
 
+import net.hollowed.volatility.common.client.shader.GlowPostProcessor;
+import net.hollowed.volatility.common.client.shader.LightingFx;
 import net.hollowed.volatility.common.event.DeathEvent;
 import net.hollowed.volatility.common.item.ModItems;
 import net.minecraft.commands.CommandSource;
@@ -16,6 +18,7 @@ import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
+import org.joml.Vector3f;
 import team.lodestar.lodestone.handlers.ScreenshakeHandler;
 import team.lodestar.lodestone.systems.easing.Easing;
 import team.lodestar.lodestone.systems.screenshake.PositionedScreenshakeInstance;
@@ -80,6 +83,9 @@ public class DeathItemRightclick {
         for (int i = 0; i < 2; i++) {
             ScreenshakeHandler.addScreenshake(instance1);
         }
+        Vector3f center = new Vector3f(0, 0, 0);
+        Vector3f color = new Vector3f(1, 0, 1);
+        GlowPostProcessor.INSTANCE.addFxInstance(new LightingFx(center, color));
     }
 }
 

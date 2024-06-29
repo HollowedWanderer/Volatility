@@ -1,0 +1,18 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha"
+  },
+  "vertex": "volatility:glow",
+  "fragment": "volatility:glow",
+  "attributes": [ "Position" ],
+  "samplers": [
+    { "name": "DiffuseSampler" },
+    { "name": "MainDepthSampler" }
+  ],
+  "uniforms": [
+    { "name": "InSize", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] },
+    { "name": "OutSize", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] }
+  ]
+}

@@ -1,5 +1,6 @@
 package net.hollowed.volatility.common.event;
 
+import net.hollowed.volatility.common.client.shader.GlowPostProcessor;
 import net.hollowed.volatility.common.client.shader.TintPostProcessor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,5 +16,6 @@ public class ClientModEvents
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         PostProcessHandler.addInstance(TintPostProcessor.INSTANCE);
+        PostProcessHandler.addInstance(GlowPostProcessor.INSTANCE);
     }
 }

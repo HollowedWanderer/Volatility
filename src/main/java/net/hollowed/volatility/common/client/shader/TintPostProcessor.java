@@ -9,7 +9,7 @@ public class TintPostProcessor extends PostProcessor {
     public static final TintPostProcessor INSTANCE = new TintPostProcessor();
 
     static {
-        INSTANCE.setActive(true);
+        INSTANCE.setActive(false);
     }
 
     @Override
