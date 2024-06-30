@@ -83,7 +83,6 @@ public class DeathItemRightclick {
         for (int i = 0; i < 2; i++) {
             ScreenshakeHandler.addScreenshake(instance1);
         }
-        GlowPostProcessor.INSTANCE.addFxInstance(new LightingFx(new Vector3f(0, 0, 0), new Vector3f(1, 0, 1)));
     }
 }
 
