@@ -2,27 +2,28 @@ package net.hollowed.volatility.common.client.shader;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.hollowed.volatility.Volatility;
-import org.joml.Vector3f;
 import team.lodestar.lodestone.systems.postprocess.MultiInstancePostProcessor;
 import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.PostChain;
+
+import java.io.IOException;
 
 public class GlowPostProcessor extends MultiInstancePostProcessor<LightingFx> {
-
     public static final GlowPostProcessor INSTANCE = new GlowPostProcessor();
     private EffectInstance effectGlow;
 
     @Override
     public ResourceLocation getPostChainLocation() {
-        return new ResourceLocation(Volatility.MOD_ID, "glow_post");
+        return new ResourceLocation(Volatility.MOD_ID, "shaders/post/glow_post");
     }
-    // Max amount of FxInstances that can be added to the post processor at once
+
     @Override
     protected int getMaxInstances() {
         return 32767;
     }
 
-    // We passed in a total of 6 floats/uniforms to the shader inside our LightingFx class so this should return 6, will crash if it doesn't match
     @Override
     protected int getDataSizePerInstance() {
         return 6;
@@ -32,17 +33,28 @@ public class GlowPostProcessor extends MultiInstancePostProcessor<LightingFx> {
     public void init() {
         super.init();
         if (postChain != null) {
-            effectGlow = effects[0];
+            if (effects != null && effects.length > 0) {
+                effectGlow = effects[0];
+            } else {
+                System.err.println("Effects array is null or empty.");
+            }
+        } else {
+            System.err.println("PostChain is null.");
         }
     }
 
     @Override
     public void beforeProcess(PoseStack viewModelStack) {
         super.beforeProcess(viewModelStack);
-        setDataBufferUniform(effectGlow, "DataBuffer", "InstanceCount");
+        if (effectGlow != null) {
+            setDataBufferUniform(effectGlow, "DataBuffer", "InstanceCount");
+        } else {
+            System.err.println("EffectGlow is null.");
+        }
     }
 
     @Override
     public void afterProcess() {
+
     }
 }
