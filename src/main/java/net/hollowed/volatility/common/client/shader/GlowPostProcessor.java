@@ -14,12 +14,12 @@ public class GlowPostProcessor extends MultiInstancePostProcessor<LightingFx> {
 
     @Override
     public ResourceLocation getPostChainLocation() {
-        return new ResourceLocation(Volatility.MOD_ID, "glow");
+        return new ResourceLocation(Volatility.MOD_ID, "glow_post");
     }
     // Max amount of FxInstances that can be added to the post processor at once
     @Override
     protected int getMaxInstances() {
-        return 16;
+        return 32767;
     }
 
     // We passed in a total of 6 floats/uniforms to the shader inside our LightingFx class so this should return 6, will crash if it doesn't match

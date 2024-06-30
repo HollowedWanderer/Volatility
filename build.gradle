@@ -158,11 +158,16 @@ mixin {
 }
 
 repositories {
+    mavenCentral()
     maven {
         name 'Curios maven'
         url = "https://maven.theillusivec4.top/"
+    }
+    maven {
+        name = "Curse Maven"
+        url "https://cursemaven.com"
         content {
-            includeGroupByRegex "top\\.theillusivec4.*"
+            includeGroup "curse.maven"
         }
     }
     maven {
@@ -219,6 +224,8 @@ dependencies {
     implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.20")
 
     implementation fg.deobf("curse.maven:lodestone-616457:5460471")
+    //Lodestone 1.20.1:1.6.1
+
     //implementation fg.deobf("maven.modrinth:runes-and-spirits:1.0.0-1.20.1")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings

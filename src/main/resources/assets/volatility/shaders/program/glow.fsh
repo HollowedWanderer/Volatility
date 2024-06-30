@@ -1,6 +1,6 @@
 #version 150
 
-#moj_import <lodestone:common_math.glsl>
+#moj_import <lodestone:shaders/include/common_math.glsl>
 
 // Samplers
 uniform sampler2D DiffuseSampler;
