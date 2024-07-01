@@ -5,7 +5,7 @@
   ],
   "passes": [
     {
-      "name": "volatility:glow",
+      "name": "volatility:shaders/program/glow",
       "intarget": "minecraft:main",
       "outtarget": "final",
       "auxtargets": [

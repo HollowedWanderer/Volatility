@@ -37,9 +37,11 @@ public class GlowPostProcessor extends MultiInstancePostProcessor<LightingFx> {
                 effectGlow = effects[0];
             } else {
                 System.err.println("Effects array is null or empty.");
+                throw new IllegalStateException("Effects array is null or empty.");
             }
         } else {
             System.err.println("PostChain is null.");
+            //throw new IllegalStateException("PostChain is null.");
         }
     }
 
@@ -50,6 +52,7 @@ public class GlowPostProcessor extends MultiInstancePostProcessor<LightingFx> {
             setDataBufferUniform(effectGlow, "DataBuffer", "InstanceCount");
         } else {
             System.err.println("EffectGlow is null.");
+            throw new IllegalStateException("EffectGlow is null.");
         }
     }
 

@@ -16,6 +16,9 @@ public class ModItems {
 
     /** Entity Spawn Eggs **/
 
+    public static final RegistryObject<Item> FANCY_ITEM = ITEMS.register("fancy_item",
+            () -> new ParticleItem(new Item.Properties().stacksTo(64).fireResistant()));
+
     public static final RegistryObject<Item> CURSED_REMAINS_SPAWN_EGG = ITEMS.register("cursed_remains_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.CURSED_REMAINS, -5785153, -12670032,
                     new Item.Properties()));

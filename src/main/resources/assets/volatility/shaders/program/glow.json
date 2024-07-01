@@ -5,7 +5,7 @@
     "dstrgb": "1-srcalpha"
   },
   "vertex": "blit",
-  "fragment": "volatility:glow",
+  "fragment": "volatility:shaders/program/glow",
   "attributes": [ "Position" ],
   "samplers": [
     { "name": "DiffuseSampler" },
